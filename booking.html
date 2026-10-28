@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation Concierge</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Dedicated External CSS -->
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="page-preloader" class="preloader">
+        <div class="preloader-box">
+            <div class="preloader-ring">
+                <span class="preloader-text">FT</span>
+            </div>
+            <h2 class="preloader-title">The Flame Table</h2>
+            <div class="preloader-line">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO HEADER -->
+    <header class="menu-hero-header" id="home" style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1920&q=90');">
+        <div class="menu-hero-overlay"></div>
+
+     
+        <nav class="navbar navbar-expand-lg menu-navbar">
+            <div class="nav-shell">
+
+                <!-- MOBILE BAR -->
+                <div class="nav-bar">
+                    <a class="brand-link" href="index.html">
+                        <img src="images/logo_restaurent.png" alt="The Flame Table" class="brand-img">
+                    </a>
+                    <button class="nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavCollapse" aria-controls="menuNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+
+                <!-- DESKTOP / DRAWER NAVBAR LINKS -->
+                <div class="collapse navbar-collapse nav-panel" id="menuNavCollapse">
+                    <ul class="navbar-nav nav-group">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span class="link-idx">01</span>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html"><span class="link-idx">02</span>Menu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="booking.html"><span class="link-idx">03</span>Booking</a></li>
+                    </ul>
+
+                    <a class="brand-center" href="index.html">
+                        <img src="images/logo_restaurent.png" alt="The Flame Table" class="brand-img-lg">
+                    </a>
+
+                    <ul class="navbar-nav nav-group">
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span class="link-idx">04</span>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="link-idx">05</span>Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span class="link-idx">06</span>Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="menu-banner-content text-center">
+            <span class="hero-subtitle mb-2"><i class="fa-solid fa-fire-flame-curved me-2"></i>Interactive Concierge</span>
+            <h1 class="hero-title mb-3">Reserve Your Experience</h1>
+            
+            <div class="luxury-breadcrumb-wrap">
+                <div class="breadcrumbs-pill">
+                    <a href="index.html"><i class="fa-solid fa-house fs-7 me-1"></i> Home</a>
+                    <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="current">Booking</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONCIERGE EXPERIENCE SECTION -->
+    <section class="concierge-section py-5">
+        <div class="container py-4">
+            
+            <!-- STEPPER ARCS -->
+            <div class="concierge-stepper mb-5">
+                <div class="step-node active" id="node1" onclick="jumpToStep(1)">
+                    <div class="step-number">01</div>
+                    <span class="step-label">Select Zone</span>
+                </div>
+                <div class="step-node" id="node2" onclick="jumpToStep(2)">
+                    <div class="step-number">02</div>
+                    <span class="step-label">Schedule &amp; Guests</span>
+                </div>
+                <div class="step-node" id="node3" onclick="jumpToStep(3)">
+                    <div class="step-number">03</div>
+                    <span class="step-label">Personal Details</span>
+                </div>
+            </div>
+
+            <!-- STEP 1: ATMOSPHERE MATRIX -->
+            <div class="concierge-step-pane active" id="stepPane1">
+                <div class="text-center mb-4">
+                    <span class="hero-subtitle">Step 1 of 3</span>
+                    <h3 class="font-serif text-white fs-2">Choose Your Ambiance</h3>
+                </div>
+
+                <div class="floor-matrix-grid">
+                    <div class="matrix-tile selected" onclick="selectTile(this, 'Main Fire Hearth')">
+                        <div class="matrix-bg" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="matrix-overlay"></div>
+                        <div class="matrix-info">
+                            <h4>Main Fire Hearth</h4>
+                            <p>Central open wood-fire views with ambient oak glow.</p>
+                        </div>
+                    </div>
+
+                    <div class="matrix-tile" onclick="selectTile(this, 'Chef\'s Live Counter')">
+                        <div class="matrix-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="matrix-overlay"></div>
+                        <div class="matrix-info">
+                            <h4>Chef's Live Counter</h4>
+                            <p>Watch master chefs grill live right before your eyes.</p>
+                        </div>
+                    </div>
+
+                    <div class="matrix-tile" onclick="selectTile(this, 'Vintage Wine Vault')">
+                        <div class="matrix-bg" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="matrix-overlay"></div>
+                        <div class="matrix-info">
+                            <h4>Vintage Wine Vault</h4>
+                            <p>Private candlelight table encased in sommelier reserves.</p>
+                        </div>
+                    </div>
+
+                    <div class="matrix-tile" onclick="selectTile(this, 'Starlit Terrace')">
+                        <div class="matrix-bg" style="background-image: url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="matrix-overlay"></div>
+                        <div class="matrix-info">
+                            <h4>Starlit Terrace</h4>
+                            <p>Open-air garden fire pits under night skies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-actions mt-5 d-flex justify-content-end">
+                    <button type="button" class="btn-modern-gold" onclick="nextStep(2)">
+                        <span>Continue to Schedule</span>
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 2: TIME & GUEST COUNTER -->
+            <div class="concierge-step-pane" id="stepPane2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="concierge-card">
+                            <div class="text-center mb-4">
+                                <span class="hero-subtitle">Step 2 of 3</span>
+                                <h3 class="font-serif text-white fs-3">Set Date, Time &amp; Guests</h3>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="fs-7 text-uppercase fw-bold mb-2 d-block" style="color: #dfb24e; letter-spacing: 1.5px;">Select Date</label>
+                                <input type="date" class="form-control concierge-field" id="reservationDate" required style="color-scheme: dark;">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="fs-7 text-uppercase fw-bold mb-2 d-block" style="color: #dfb24e; letter-spacing: 1.5px;">Preferred Time Slot</label>
+                                <div class="time-chip-group">
+                                    <div class="time-chip active" onclick="selectTime(this)">05:30 PM</div>
+                                    <div class="time-chip" onclick="selectTime(this)">07:00 PM</div>
+                                    <div class="time-chip" onclick="selectTime(this)">08:30 PM</div>
+                                    <div class="time-chip" onclick="selectTime(this)">10:00 PM</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="fs-7 text-uppercase fw-bold d-block mb-2" style="color: #dfb24e; letter-spacing: 1.5px;">Party Size</label>
+                                <div class="guest-counter-box">
+                                    <button type="button" class="counter-btn" onclick="adjustGuest(-1)"><i class="fa-solid fa-minus"></i></button>
+                                    <span class="counter-val" id="guestCountVal">2</span>
+                                    <button type="button" class="counter-btn" onclick="adjustGuest(1)"><i class="fa-solid fa-plus"></i></button>
+                                    <span class="fs-7 text-muted counter-unit ms-3">Guests</span>
+                                </div>
+                            </div>
+
+                            <div class="step-actions mt-4 d-flex justify-content-between">
+                                <button type="button" class="btn-step-prev" onclick="nextStep(1)">Back</button>
+                                <button type="button" class="btn-modern-gold" onclick="nextStep(3)">
+                                    <span>Enter Guest Info</span>
+                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3: PERSONAL DETAILS -->
+            <div class="concierge-step-pane" id="stepPane3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="concierge-card">
+                            <div class="text-center mb-4">
+                                <span class="hero-subtitle">Final Step</span>
+                                <h3 class="font-serif text-white fs-3">Confirm Guest Entry</h3>
+                            </div>
+
+                            <form id="finalConciergeForm" onsubmit="handleFormSubmit(event)">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="fs-7 text-uppercase fw-bold mb-1 d-block" style="color: #dfb24e; letter-spacing: 1.5px;">Full Name</label>
+                                        <input type="text" class="form-control concierge-field" placeholder="e.g. Alexander Vance" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="fs-7 text-uppercase fw-bold mb-1 d-block" style="color: #dfb24e; letter-spacing: 1.5px;">Phone Number</label>
+                                        <input type="tel" class="form-control concierge-field" placeholder="+1 (208) 000-0000" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="fs-7 text-uppercase fw-bold mb-1 d-block" style="color: #dfb24e; letter-spacing: 1.5px;">Email Address</label>
+                                        <input type="email" class="form-control concierge-field" placeholder="alexander@domain.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="fs-7 text-uppercase fw-bold mb-1 d-block" style="color: #dfb24e; letter-spacing: 1.5px;">Special Requests</label>
+                                        <textarea class="form-control concierge-field" rows="3" placeholder="Anniversary celebration, dietary restrictions, preferred wine pairing..."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="step-actions mt-4 d-flex justify-content-between">
+                                    <button type="button" class="btn-step-prev" onclick="nextStep(2)">Back</button>
+                                    <button type="submit" class="btn-modern-gold">
+                                        <span>Complete Reservation</span>
+                                        <i class="fa-solid fa-check ms-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo_restaurent.png" alt="The Flame Table Logo" class="footer-logo">
+                    <p class="footer-about">
+                        Wood-fired flavors, seasonal ingredients, and warm hospitality — an unforgettable dining experience in the heart of the city.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://google.com" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i><span>Collins Street West, Victoria 8007, Australia</span></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+12083339296">+1 (208) 333-9296</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:concierge@theflametable.com">concierge@theflametable.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Mon – Thu</span><span>12:00 – 23:00</span></li>
+                        <li><span>Fri – Sat</span><span>12:00 – 01:00</span></li>
+                        <li><span>Sunday</span><span>12:00 – 22:00</span></li>
+                    </ul>
+                    <p class="footer-note"><i class="fa-solid fa-fire-flame-curved"></i> Walk-ins welcome at the fire bar.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy mb-0">&copy; 2026 The Flame Table. All Rights Reserved.</p>
+                <ul class="footer-legal mb-0 list-unstyled d-flex gap-4">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <a href="#home" class="footer-top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Interactive Concierge JS Script -->
+    <script>
+        // Navbar Scrolled Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.menu-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Preloader Hide
+        const preloader = document.getElementById('page-preloader');
+        function hidePreloader() {
+            if (preloader) preloader.classList.add('loaded');
+        }
+        window.addEventListener('load', () => setTimeout(hidePreloader, 1000));
+        setTimeout(hidePreloader, 4000);
+
+        // Concierge Multi-Step Logic
+        let currentStep = 1;
+        let selectedZone = "Main Fire Hearth";
+        let guestCount = 2;
+
+        function nextStep(stepNum) {
+            currentStep = stepNum;
+
+            document.querySelectorAll('.step-node').forEach((node, idx) => {
+                if (idx + 1 <= stepNum) {
+                    node.classList.add('active');
+                } else {
+                    node.classList.remove('active');
+                }
+            });
+
+            document.querySelectorAll('.concierge-step-pane').forEach((pane, idx) => {
+                if (idx + 1 === stepNum) {
+                    pane.classList.add('active');
+                } else {
+                    pane.classList.remove('active');
+                }
+            });
+        }
+
+        function jumpToStep(stepNum) {
+            nextStep(stepNum);
+        }
+
+        function selectTile(tileElement, zoneName) {
+            document.querySelectorAll('.matrix-tile').forEach(t => t.classList.remove('selected'));
+            tileElement.classList.add('selected');
+            selectedZone = zoneName;
+        }
+
+        function selectTime(chipElement) {
+            document.querySelectorAll('.time-chip').forEach(c => c.classList.remove('active'));
+            chipElement.classList.add('active');
+        }
+
+        function adjustGuest(delta) {
+            guestCount += delta;
+            if (guestCount < 1) guestCount = 1;
+            if (guestCount > 12) guestCount = 12;
+            document.getElementById('guestCountVal').textContent = guestCount;
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert(`Thank you! Your table in '${selectedZone}' for ${guestCount} guests has been reserved.`);
+        }
+
+        // Smooth Back to Top Scroll
+        const backTopBtn = document.querySelector('.footer-top');
+        if (backTopBtn) {
+            backTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+</body>
+</html>

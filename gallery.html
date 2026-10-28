@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Atelier & Gallery</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Standalone Gallery Page External CSS -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="page-preloader" class="preloader">
+        <div class="preloader-box">
+            <div class="preloader-ring">
+                <span class="preloader-text">FT</span>
+            </div>
+            <h2 class="preloader-title">The Flame Table</h2>
+            <div class="preloader-line">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO HEADER -->
+    <header class="menu-hero-header" id="home" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=90');">
+        <div class="menu-hero-overlay"></div>
+
+        <!-- FIXED TRANSPARENT NAVBAR (Exact Same as Menu & About) -->
+        <nav class="navbar navbar-expand-lg menu-navbar">
+            <div class="nav-shell">
+
+                <!-- MOBILE BAR -->
+                <div class="nav-bar">
+                    <a class="brand-link" href="index.html">
+                        <img src="images/logo_restaurent.png" alt="The Flame Table" class="brand-img">
+                    </a>
+                    <button class="nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavCollapse" aria-controls="menuNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+
+                <!-- DESKTOP / DRAWER NAVBAR LINKS -->
+                <div class="collapse navbar-collapse nav-panel" id="menuNavCollapse">
+                    <ul class="navbar-nav nav-group">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span class="link-idx">01</span>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html"><span class="link-idx">02</span>Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html"><span class="link-idx">03</span>Booking</a></li>
+                    </ul>
+
+                    <a class="brand-center" href="index.html">
+                        <img src="images/logo_restaurent.png" alt="The Flame Table" class="brand-img-lg">
+                    </a>
+
+                    <ul class="navbar-nav nav-group">
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span class="link-idx">04</span>About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="gallery.html"><span class="link-idx">05</span>Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span class="link-idx">06</span>Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="menu-banner-content text-center">
+            <span class="hero-subtitle mb-2">
+                <i class="fa-solid fa-fire-flame-curved me-2"></i>Fresh Visual Narrative
+            </span>
+            <h1 class="hero-title mb-3">The Culinary Atelier</h1>
+
+            <div class="luxury-breadcrumb-wrap">
+                <div class="breadcrumbs-pill">
+                    <a href="index.html"><i class="fa-solid fa-house fs-7 me-1"></i> Home</a>
+                    <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="current">Gallery</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- EDITORIAL SHOWCASE SECTION -->
+    <section class="gallery-section py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 pb-3">
+                <span class="menu-subtitle">Atelier Moments</span>
+                <h2 class="menu-title mb-3">Immersive Visual Series</h2>
+                <p class="gallery-lead">
+                    Explore our collection featuring high-definition moments of wood-fired gastronomy, artisan plating, and lounge elegance.
+                </p>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="gallery-filter-wrap d-flex justify-content-center gap-2 mb-5 pb-4 flex-wrap">
+                <button type="button" class="filter-pill active" data-filter="all">All Series</button>
+                <button type="button" class="filter-pill" data-filter="hearth">Hearth &amp; Fire</button>
+                <button type="button" class="filter-pill" data-filter="plating">Artisan Plating</button>
+                <button type="button" class="filter-pill" data-filter="ambiance">Atmosphere</button>
+            </div>
+
+            <!-- Fresh Editorial Layout -->
+            <div class="fresh-editorial-wrap" id="galleryGrid">
+
+                <!-- 1 -->
+                <div class="fresh-row" data-category="hearth" data-title="Charcoal & Hardwood Hearth" data-desc="Intense radiant heat generated from locally harvested white oak logs.">
+                    <div class="fresh-text-box">
+                        <span class="fresh-num">01</span>
+                        <span class="fresh-tag">Hearth &amp; Fire</span>
+                        <h3 class="fresh-heading">Charcoal &amp; Hardwood Hearth</h3>
+                        <p class="fresh-desc">Intense radiant heat generated from locally harvested white oak logs, forming the beating heart of our kitchen.</p>
+                        <span class="fresh-link">Enlarge Frame <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </div>
+                    <div class="fresh-img-box" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=85');"></div>
+                </div>
+
+                <!-- 2 (Reversed) -->
+                <div class="fresh-row reversed" data-category="plating" data-title="Gourmet Truffle Risotto" data-desc="Carnaroli rice folded with 24-month aged parmesan and freshly shaved black truffles.">
+                    <div class="fresh-img-box" style="background-image: url('https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=1400&q=85');"></div>
+                    <div class="fresh-text-box">
+                        <span class="fresh-num">02</span>
+                        <span class="fresh-tag">Artisan Plating</span>
+                        <h3 class="fresh-heading">Gourmet Truffle Risotto</h3>
+                        <p class="fresh-desc">Carnaroli rice folded with 24-month aged parmesan and freshly shaved black truffles, finished with herb butter.</p>
+                        <span class="fresh-link">Enlarge Frame <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="fresh-row" data-category="ambiance" data-title="The Amber Lounge Bar" data-desc="An intimate evening setting illuminated by warm amber pendants and polished dark wood.">
+                    <div class="fresh-text-box">
+                        <span class="fresh-num">03</span>
+                        <span class="fresh-tag">Atmosphere</span>
+                        <h3 class="fresh-heading">The Amber Lounge Bar</h3>
+                        <p class="fresh-desc">An intimate evening setting illuminated by warm amber pendants, polished dark wood surfaces, and glowing spirit displays.</p>
+                        <span class="fresh-link">Enlarge Frame <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </div>
+                    <div class="fresh-img-box" style="background-image: url('https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1400&q=85');"></div>
+                </div>
+
+                <!-- 4 (Reversed) -->
+                <div class="fresh-row reversed" data-category="plating" data-title="Smoked Citrus Craft Cocktail" data-desc="Small-batch botanical gin infused with rosemary smoke, citrus oils, and artisanal ice.">
+                    <div class="fresh-img-box" style="background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1400&q=85');"></div>
+                    <div class="fresh-text-box">
+                        <span class="fresh-num">04</span>
+                        <span class="fresh-tag">Artisan Plating</span>
+                        <h3 class="fresh-heading">Smoked Citrus Craft Cocktail</h3>
+                        <p class="fresh-desc">Small-batch botanical gin infused with rosemary smoke, fresh citrus oils, and crystal-clear artisanal ice spheres.</p>
+                        <span class="fresh-link">Enlarge Frame <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="fresh-row" data-category="hearth" data-title="Prime Cut Wood-Fired Steak" data-desc="Exquisitely marbled beef seared directly over glowing embers for an unmatched crust.">
+                    <div class="fresh-text-box">
+                        <span class="fresh-num">05</span>
+                        <span class="fresh-tag">Hearth &amp; Fire</span>
+                        <h3 class="fresh-heading">Prime Cut Wood-Fired Steak</h3>
+                        <p class="fresh-desc">Exquisitely marbled prime beef seared directly over glowing oak embers to lock in rich, savory juices.</p>
+                        <span class="fresh-link">Enlarge Frame <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </div>
+                    <div class="fresh-img-box" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=85');"></div>
+                </div>
+
+                <!-- 6 (Reversed) -->
+                <div class="fresh-row reversed" data-category="ambiance" data-title="Architectural Dining Hall" data-desc="High ceilings and minimalist modern design framing our open kitchen experience.">
+                    <div class="fresh-img-box" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85');"></div>
+                    <div class="fresh-text-box">
+                        <span class="fresh-num">06</span>
+                        <span class="fresh-tag">Atmosphere</span>
+                        <h3 class="fresh-heading">Architectural Dining Hall</h3>
+                        <p class="fresh-desc">High ceilings and minimalist modern design framing our live open kitchen, creating an unforgettable sensory experience.</p>
+                        <span class="fresh-link">Enlarge Frame <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo_restaurent.png" alt="The Flame Table Logo" class="footer-logo">
+                    <p class="footer-about">
+                        Wood-fired flavors, seasonal ingredients, and warm hospitality — an unforgettable dining experience in the heart of the city.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://google.com" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i><span>Collins Street West, Victoria 8007, Australia</span></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+12083339296">+1 (208) 333-9296</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:concierge@theflametable.com">concierge@theflametable.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Mon – Thu</span><span>12:00 – 23:00</span></li>
+                        <li><span>Fri – Sat</span><span>12:00 – 01:00</span></li>
+                        <li><span>Sunday</span><span>12:00 – 22:00</span></li>
+                    </ul>
+                    <p class="footer-note" style="color: #dfb24e; font-size: 0.78rem; margin-top: 16px;"><i class="fa-solid fa-fire-flame-curved"></i> Walk-ins welcome at the fire bar.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 30px 0; flex-wrap: wrap; gap: 20px;">
+                <p class="footer-copy mb-0" style="color: rgba(244, 240, 234, 0.5); font-size: 0.85rem;">&copy; 2026 The Flame Table. All Rights Reserved.</p>
+                <ul class="footer-legal mb-0 list-unstyled d-flex gap-4">
+                    <li><a href="#" style="color: rgba(244, 240, 234, 0.5); text-decoration: none; font-size: 0.85rem;">Privacy Policy</a></li>
+                    <li><a href="#" style="color: rgba(244, 240, 234, 0.5); text-decoration: none; font-size: 0.85rem;">Terms of Service</a></li>
+                </ul>
+                <a href="#home" class="footer-top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content-box">
+            <img id="lightboxImg" src="" alt="Enlarged View">
+            <div class="lightbox-caption">
+                <span class="g-tag mb-2 d-inline-block" style="color: #dfb24e; letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem;">Atelier Visual Series</span>
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+                <a href="booking.html" class="btn-modern-gold mt-3">
+                    <span>Reserve Your Table</span>
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar Scrolled Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.menu-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Preloader
+        const preloader = document.getElementById('page-preloader');
+        function hidePreloader() { if (preloader) preloader.classList.add('loaded'); }
+        window.addEventListener('load', () => setTimeout(hidePreloader, 1000));
+        setTimeout(hidePreloader, 4000);
+
+        // Filter Pills Interaction
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const freshRows = document.querySelectorAll('.fresh-row');
+
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', function() {
+                filterPills.forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.getAttribute('data-filter');
+
+                freshRows.forEach(row => {
+                    row.style.opacity = '0';
+                    row.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        if (filter === 'all' || row.getAttribute('data-category') === filter) {
+                            row.style.display = 'grid';
+                            setTimeout(() => {
+                                row.style.opacity = '1';
+                                row.style.transform = 'translateY(0)';
+                            }, 50);
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    }, 250);
+                });
+            });
+        });
+
+        // Lightbox Modal Controls
+        const modal = document.getElementById('lightboxModal');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxDesc = document.getElementById('lightboxDesc');
+
+        function openLightbox(bgStyle, title, desc) {
+            const urlMatch = bgStyle.match(/url\("?(['"]?)([^'"]*)\1"?\)/);
+            if (urlMatch && urlMatch[2]) {
+                lightboxImg.src = urlMatch[2].replace('&w=1400&q=85', '&w=1800&q=95');
+            }
+            lightboxTitle.textContent = title;
+            lightboxDesc.textContent = desc;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        freshRows.forEach(row => {
+            row.addEventListener('click', () => {
+                const bg = row.querySelector('.fresh-img-box').style.backgroundImage;
+                const title = row.getAttribute('data-title');
+                const desc = row.getAttribute('data-desc');
+                openLightbox(bg, title, desc);
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) closeLightbox();
+        });
+
+        // Close Mobile Menu When A Link Is Tapped
+        document.querySelectorAll('.menu-navbar .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                const collapse = document.getElementById('menuNavCollapse');
+                if (collapse && collapse.classList.contains('show')) {
+                    bootstrap.Collapse.getOrCreateInstance(collapse).hide();
+                }
+            });
+        });
+
+        // Back To Top Smooth Scroll
+        const backTop = document.querySelector('.footer-top');
+        if (backTop) {
+            backTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

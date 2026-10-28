@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flame Table </title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="css/ style.css">
+</head>
+<body>
+
+
+  <!-- PRELOADER -->
+    <div id="page-preloader" class="preloader">
+        <div class="preloader-box">
+            <div class="preloader-ring">
+                <span class="preloader-text">FT</span>
+            </div>
+            <h2 class="preloader-title">The Flame Table</h2>
+            <div class="preloader-line">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO HEADER -->
+    <header class="hero-header" id="home">
+        <div class="hero-overlay"></div>
+
+        <!-- Background Slider -->
+        <div class="carousel-holder">
+            <div class="carousel slide carousel-fade h-100 hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <div class="slider-bg" style="background-image: url('images/c1.jpeg');"></div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="slider-bg" style="background-image: url('images/c2.jpeg');"></div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="slider-bg" style="background-image: url('images/c3.jpeg');"></div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="slider-bg" style="background-image: url('images/c4.jpeg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFESSIONAL LUXURY NAVBAR -->
+        <nav class="navbar navbar-expand-lg menu-navbar">
+            <div class="nav-shell">
+
+                <!-- MOBILE BAR -->
+                <div class="nav-bar">
+                    <a class="brand-link" href="index.html">
+                        <img src="images/logo_restaurent.png" alt="The Flame Table" class="brand-img">
+                    </a>
+                    <button class="nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavCollapse" aria-controls="menuNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                </div>
+
+                <!-- DESKTOP — links | center logo | links -->
+                <div class="collapse navbar-collapse nav-panel" id="menuNavCollapse">
+                    <ul class="navbar-nav nav-group">
+                        <li class="nav-item"><a class="nav-link active" href="index.html"><span class="link-idx">01</span>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html"><span class="link-idx">02</span>Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html"><span class="link-idx">03</span>Booking</a></li>
+                    </ul>
+
+                    <a class="brand-center" href="index.html">
+                        <img src="images/logo_restaurent.png" alt="The Flame Table" class="brand-img-lg">
+                    </a>
+
+                    <ul class="navbar-nav nav-group">
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span class="link-idx">04</span>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="link-idx">05</span>Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span class="link-idx">06</span>Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!-- HERO DYNAMIC CONTENT -->
+        <div class="hero-content-holder">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 text-center">
+
+                        <!-- Dynamic Slide Content 0 -->
+                        <div class="hero-slide active" data-slide="0">
+                            <span class="hero-subtitle mb-3">Savor Perfection</span>
+                            <h1 class="hero-title mb-4">Experience <span class="accent">Flavorful</span> Creations</h1>
+                            <p class="hero-desc mb-5">Where culinary artistry meets modern elegance to create an unforgettable dining symphony.</p>
+                            <div class="hero-actions">
+                                <a href="menu.html" class="btn-modern-gold">
+                                    <span>Explore Selection</span>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Slide Content 1 -->
+                        <div class="hero-slide d-none" data-slide="1">
+                            <span class="hero-subtitle mb-3">Flavors to Satisfy</span>
+                            <h1 class="hero-title mb-4">Where Taste Meets <span class="accent">Luxury</span></h1>
+                            <p class="hero-desc mb-5">Prepare your senses for an exclusive journey of exquisite tastes and premium ingredients.</p>
+                            <div class="hero-actions">
+                                <a href="menu.html" class="btn-modern-gold">
+                                    <span>Explore Selection</span>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Slide Content 2 -->
+                        <div class="hero-slide d-none" data-slide="2">
+                            <span class="hero-subtitle mb-3">Unforgettable Evenings</span>
+                            <h1 class="hero-title mb-4">Dine in Ultimate <span class="accent">Ambiance</span></h1>
+                            <p class="hero-desc mb-5">Immerse yourself in world-class hospitality, ambient lighting, and soulful gourmet platters.</p>
+                            <div class="hero-actions">
+                                <a href="booking.html" class="btn-modern-gold">
+                                    <span>Reserve Your Table</span>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Slide Content 3 -->
+                        <div class="hero-slide d-none" data-slide="3">
+                            <span class="hero-subtitle mb-3">Passion & Tradition</span>
+                            <h1 class="hero-title mb-4">Taste the Authentic <span class="accent">Flame</span></h1>
+                            <p class="hero-desc mb-5">Every single recipe honors rich culinary heritage blended with contemporary innovation.</p>
+                            <div class="hero-actions">
+                                <a href="about.html" class="btn-modern-gold">
+                                    <span>Our Story</span>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-btn prev border-0" type="button" data-bs-target=".hero-carousel" data-bs-slide="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next border-0" type="button" data-bs-target=".hero-carousel" data-bs-slide="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </header>
+
+
+
+    <!-- LUXURY MOMENTS SECTION -->
+    <section class="luxury-moments-section">
+        <div class="luxury-container">
+
+            <div class="luxury-header">
+                <span class="luxury-subtitle">Discover The Experience</span>
+                <h2 class="luxury-title">Memorable <span class="tx-accent">Moments</span></h2>
+                <div class="luxury-line"></div>
+                <p class="luxury-desc">
+                    Step into a world where exceptional flavors, aesthetic brilliance, and warm hospitality merge into unforgettable dining chapters.
+                </p>
+            </div>
+
+            <div class="luxury-grid">
+
+                <!-- Card 1 -->
+                <div class="luxury-card">
+                    <div class="card-image-wrap">
+                        <div class="card-bg-fixed" style="background-image: url('images/l1.jpeg');"></div>
+                        <div class="card-overlay"></div>
+                        <span class="ghost-num">01</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="icon-box"><i class="fa-solid fa-mug-hot"></i></div>
+                        <span class="card-tag">Artisanal Brews</span>
+                        <h3 class="card-heading">Aromatic Awakening</h3>
+                        <p class="card-text">
+                            Handcrafted coffee blends and organic infusions designed to awaken your senses with every single sip.
+                        </p>
+                        <a href="#" class="luxury-explore-btn">
+                            <span>Explore Selection</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="luxury-card">
+                    <div class="card-image-wrap">
+                        <div class="card-bg-fixed" style="background-image: url('images/l2.jpeg');"></div>
+                        <div class="card-overlay"></div>
+                        <span class="ghost-num">02</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="icon-box"><i class="fa-solid fa-utensils"></i></div>
+                        <span class="card-tag">Master Chef Specials</span>
+                        <h3 class="card-heading">Culinary Masterpieces</h3>
+                        <p class="card-text">
+                            Savor wood-fired delicacies and gourmet creations crafted with passion, tradition, and modern flair.
+                        </p>
+                        <a href="#" class="luxury-explore-btn">
+                            <span>Explore Selection</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="luxury-card">
+                    <div class="card-image-wrap">
+                        <div class="card-bg-fixed" style="background-image: url('images/l3.jpeg');"></div>
+                        <div class="card-overlay"></div>
+                        <span class="ghost-num">03</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="icon-box"><i class="fa-solid fa-glass-cheers"></i></div>
+                        <span class="card-tag">Exclusive Events</span>
+                        <h3 class="card-heading">Private Celebrations</h3>
+                        <p class="card-text">
+                            Transform your private gatherings and celebrations into timeless memories in our bespoke luxury dining spaces.
+                        </p>
+                        <a href="#" class="luxury-explore-btn">
+                            <span>Explore Selection</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- THE CRAFT — KINETIC MIRROR SECTION -->
+    <section class="flame-section">
+        <div class="flame-glow-top"></div>
+        <div class="flame-glow-bottom"></div>
+
+        <div class="flame-container">
+
+            <div class="flame-head">
+                <div class="flame-badge">
+                    <span class="badge-dot"></span>
+                    <span>PHILOSOPHY OF FIRE</span>
+                </div>
+
+                <h2 class="flame-title">
+                    Forged in Ember, Plated with Precision
+                </h2>
+
+                <p class="flame-subtitle">
+                    A slow performance of wood smoke, patience, and culinary silence that stays with you long after the last bite.
+                </p>
+            </div>
+
+            <div class="flame-mirror-grid">
+
+                <!-- Phase 1 -->
+                <div class="mirror-row">
+                    <div class="mirror-num">01</div>
+                    <div class="mirror-content">
+                        <span class="mirror-tag">PHASE I</span>
+                        <h3>The Live Ignition</h3>
+                        <p>Sourced at dawn, touched only by native hardwood embers. Every ingredient finds its raw, unaltered voice.</p>
+                    </div>
+                    <div class="mirror-visual">
+                        <div class="visual-inner">
+                            <div class="mirror-bg-fixed" style="background-image: url('images/p1.jpeg');"></div>
+                            <div class="visual-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="mirror-row reverse">
+                    <div class="mirror-num">02</div>
+                    <div class="mirror-content">
+                        <span class="mirror-tag">PHASE II</span>
+                        <h3>The Artisan Craft</h3>
+                        <p>Treating smoke as an ingredient. Balancing high heat, delicate texture, and quiet restraint on every plate.</p>
+                    </div>
+                    <div class="mirror-visual">
+                        <div class="visual-inner">
+                            <div class="mirror-bg-fixed" style="background-image: url('images/p2.jpeg');"></div>
+                            <div class="visual-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="mirror-row">
+                    <div class="mirror-num">03</div>
+                    <div class="mirror-content">
+                        <span class="mirror-tag">PHASE III</span>
+                        <h3>The Sacred Table</h3>
+                        <p>Dishes depart the kitchen at absolute perfection — arriving still whispering of fire, smoke, and soul.</p>
+                    </div>
+                    <div class="mirror-visual">
+                        <div class="visual-inner">
+                            <div class="mirror-bg-fixed" style="background-image: url('images/p3.jpeg');"></div>
+                            <div class="visual-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flame-footer">
+                <div class="flame-stats-strip">
+                    <div class="stat-unit">
+                        <strong>25+</strong>
+                        <span>Years of Fire</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-unit">
+                        <strong>120+</strong>
+                        <span>Signatures</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-unit">
+                        <strong>50k+</strong>
+                        <span>Guests Served</span>
+                    </div>
+                </div>
+
+                <a href="#" class="flame-cta-btn">
+                    <span>Reserve Experience</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- THE GUEST LEDGER SECTION -->
+<section class="ledger-section">
+    <div class="ledger-glow-top"></div>
+    <div class="ledger-glow-bottom"></div>
+
+    <div class="ledger-container">
+        <div class="row g-5 align-items-center">
+
+            <!-- Sidebar Summary -->
+            <div class="col-lg-4">
+                <div class="ledger-intro">
+
+                    <span class="ledger-badge">
+                        <span class="badge-dot"></span> The Guest Ledger
+                    </span>
+
+                    <h2 class="ledger-title">Every Table Leaves a <em>Story</em></h2>
+
+                    <p class="ledger-desc">
+                        Unfiltered impressions, filed exactly as our diners wrote them — pinned straight from the ledger of The Flame Table.
+                    </p>
+
+                    <div class="ledger-rating-card">
+                        <div class="lrc-top">
+                            <h3>4.9<span>/5</span></h3>
+                            <div class="lrc-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>25,000+ Verified Diner Reviews</p>
+                        </div>
+
+                        <div class="lrc-rows">
+                            <div class="lrc-row">
+                                <span class="plat-dot google"></span> Google Reviews
+                                <b>4.9</b>
+                            </div>
+                            <div class="lrc-row">
+                                <span class="plat-dot trustpilot"></span> Trustpilot
+                                <b>5.0</b>
+                            </div>
+                            <div class="lrc-row">
+                                <span class="plat-dot trip"></span> TripAdvisor
+                                <b>4.8</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-modern-gold">
+                        <span>Read All Entries</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Carousel Track -->
+            <div class="col-lg-8">
+
+                <div class="ledger-controls-wrap">
+                    <span class="controls-label">Browse Entries</span>
+                    <div class="ledger-nav-btns">
+                        <button type="button" class="ledger-arrow-btn ledger-prev" aria-label="Previous Receipt">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button type="button" class="ledger-arrow-btn ledger-next" aria-label="Next Receipt">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ledger-track-wrapper">
+                    <div class="ledger-track">
+
+                        <!-- Receipt 1 -->
+                        <article class="receipt-card is-vip">
+                            <span class="r-tape"></span>
+                            <div class="r-head">
+                                <span>ENTRY — №1042</span>
+                                <span>FEB 12 · 2026</span>
+                            </div>
+                            <div class="r-meta">
+                                <span class="r-chip chip-trust">Trustpilot</span>
+                                <span class="r-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="r-quote">"An extraordinary culinary symphony where open-flame craft meets Michelin-grade hospitality."</p>
+                            <p class="r-note">The wood-fired ribeye with a rare vintage made our anniversary immortal.</p>
+                            <div class="r-user">
+                                <span class="r-avatar"><i class="fa-solid fa-crown"></i></span>
+                                <div>
+                                    <h5>Josefa Devany</h5>
+                                    <span>VIP Connoisseur</span>
+                                </div>
+                            </div>
+                            <div class="r-barcode">
+                                <span class="r-bars"></span>
+                                <span class="r-code">FT·2026·1042</span>
+                            </div>
+                            <span class="r-stamp">VIP Guest</span>
+                        </article>
+
+                        <!-- Receipt 2 -->
+                        <article class="receipt-card">
+                            <span class="r-tape"></span>
+                            <div class="r-head">
+                                <span>ENTRY — №1043</span>
+                                <span>JAN 26 · 2026</span>
+                            </div>
+                            <div class="r-meta">
+                                <span class="r-chip chip-google">Google</span>
+                                <span class="r-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="r-quote">"Every course was a breathtaking surprise. The smoky aromas and warm lighting create magic."</p>
+                            <p class="r-note">Will return for the tasting menu.</p>
+                            <div class="r-user">
+                                <span class="r-avatar"><i class="fa-solid fa-user"></i></span>
+                                <div>
+                                    <h5>Karyn Deely</h5>
+                                    <span>Local Guide</span>
+                                </div>
+                            </div>
+                            <div class="r-barcode">
+                                <span class="r-bars"></span>
+                                <span class="r-code">FT·2026·1043</span>
+                            </div>
+                            <span class="r-stamp">Verified</span>
+                        </article>
+
+                        <!-- Receipt 3 -->
+                        <article class="receipt-card">
+                            <span class="r-tape"></span>
+                            <div class="r-head">
+                                <span>ENTRY — №1044</span>
+                                <span>MAR 03 · 2026</span>
+                            </div>
+                            <div class="r-meta">
+                                <span class="r-chip chip-trip">TripAdvisor</span>
+                                <span class="r-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="r-quote">"Artisanal coffee, wood-fired desserts, and incredible service. Hands down the finest in town!"</p>
+                            <p class="r-note">The tiramisu alone is worth the visit.</p>
+                            <div class="r-user">
+                                <span class="r-avatar"><i class="fa-solid fa-user"></i></span>
+                                <div>
+                                    <h5>Elena Rostova</h5>
+                                    <span>Food Blogger</span>
+                                </div>
+                            </div>
+                            <div class="r-barcode">
+                                <span class="r-bars"></span>
+                                <span class="r-code">FT·2026·1044</span>
+                            </div>
+                            <span class="r-stamp">Verified</span>
+                        </article>
+
+                        <!-- Receipt 4 -->
+                        <article class="receipt-card">
+                            <span class="r-tape"></span>
+                            <div class="r-head">
+                                <span>ENTRY — №1045</span>
+                                <span>MAR 17 · 2026</span>
+                            </div>
+                            <div class="r-meta">
+                                <span class="r-chip chip-google">Google</span>
+                                <span class="r-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="r-quote">"Hosted a family gathering in their private room. The staff made us feel like absolute royalty."</p>
+                            <p class="r-note">Perfect for celebrations.</p>
+                            <div class="r-user">
+                                <span class="r-avatar"><i class="fa-solid fa-user"></i></span>
+                                <div>
+                                    <h5>David Miller</h5>
+                                    <span>Regular Guest</span>
+                                </div>
+                            </div>
+                            <div class="r-barcode">
+                                <span class="r-bars"></span>
+                                <span class="r-code">FT·2026·1045</span>
+                            </div>
+                            <span class="r-stamp">Verified</span>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="drag-hint">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <span>scroll or drag to explore ledger</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DRINKS & FOODS MENU SECTION -->
+<section class="menu-showcase-section">
+    <div class="menu-container">
+        
+        <!-- Drinks Row (Image Left, Menu Right) -->
+        <div class="menu-split-row">
+            <div class="menu-img-box" style="background-image: url('images/m1.jpeg');"></div>
+            <div class="menu-text-box">
+                <span class="menu-subtitle">Liquid Artistry</span>
+                <h2 class="menu-title">Signature Drinks</h2>
+                
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div>
+                            <h4>Smoked Bourbon Espresso</h4>
+                            <p>Single-origin espresso infused with aged oak wood smoke and raw cane sugar.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span>$4.50</span>
+                            <span>$6.20</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Velvet Caramel Macchiato</h4>
+                            <p>Rich espresso, steamed Madagascar vanilla bean milk, salted caramel drizzle.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span>$5.20</span>
+                            <span>$6.80</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Gold Leaf Cappuccino</h4>
+                            <p>Double ristretto topped with micro-foam and edible 24K gold flakes.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span>$6.50</span>
+                            <span>$8.00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Dark Chocolate Truffle Mocha</h4>
+                            <p>70% Valrhona dark chocolate melted into ristretto and whole oat milk.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span>$5.80</span>
+                            <span>$7.20</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Spiced Cold Brew Tonic</h4>
+                            <p>24-hour slow drip cold brew, artisanal tonic water, rosemary, citrus peel.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span>$4.80</span>
+                            <span>$6.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-modern-gold">
+                    <span>Explore Full Beverage List</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Foods Row (Menu Left, Image Right) -->
+        <div class="menu-split-row reverse-layout">
+            <div class="menu-text-box">
+                <span class="menu-subtitle">Flame & Craft</span>
+                <h2 class="menu-title">Gourmet Creations</h2>
+                
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div>
+                            <h4>Wood-Fired Prime Ribeye</h4>
+                            <p>45-day dry-aged Angus beef grilled over native hardwood embers, smoked butter.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span><b>$48.00</b></span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Truffle Glazed Brioche</h4>
+                            <p>House-baked artisanal brioche served with whipped black truffle honey spread.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span><b>$14.50</b></span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Charred Wagyu Slider</h4>
+                            <p>A5 Japanese Wagyu patty, caramelized shallots, aged cheddar, truffle aioli.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span><b>$22.00</b></span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Flame-Roasted Garlic Bread</h4>
+                            <p>Sourdough loaf coated in roasted garlic confit, fresh parsley, and sea salt.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span><b>$12.00</b></span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div>
+                            <h4>Smoked Herb Focaccia</h4>
+                            <p>Slow-fermented bread infused with rosemary, sea salt crystals, and extra virgin olive oil.</p>
+                        </div>
+                        <div class="menu-prices">
+                            <span><b>$11.50</b></span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-modern-gold">
+                    <span>Reserve Dining Experience</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <div class="menu-img-box" style="background-image: url('images/m2.jpeg');"></div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- OPENING HOURS SECTION -->
+<section class="hours-banner-section">
+    <div class="hours-banner-wrap" style="background-image: url('images/h.jpeg');">
+        <div class="hours-overlay"></div>
+        
+        <div class="hours-container">
+            <div class="hours-header text-center">
+                <span class="hours-sub">Welcome To Our Haven</span>
+                <h2 class="hours-title">We Are <em>Open</em></h2>
+                <div class="hours-divider"></div>
+            </div>
+
+            <div class="hours-cards-grid">
+                <!-- Card 1 -->
+                <div class="hours-card">
+                    <div class="card-glow"></div>
+                    <span class="day-label">Monday – Thursday</span>
+                    <h3 class="time-slot">10:30 AM – 09:30 PM</h3>
+                    <p class="slot-note">Lunch & Evening Dining</p>
+                </div>
+
+                <!-- Card 2 (Featured / Prime Hours) -->
+                <div class="hours-card featured">
+                    <div class="card-glow"></div>
+                    <span class="featured-badge">Prime Time</span>
+                    <span class="day-label">Friday Night</span>
+                    <h3 class="time-slot">10:00 AM – 10:30 PM</h3>
+                    <p class="slot-note">Late Night Bar & Live Jazz</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="hours-card">
+                    <div class="card-glow"></div>
+                    <span class="day-label">Saturday – Sunday</span>
+                    <h3 class="time-slot">09:30 AM – 11:00 PM</h3>
+                    <p class="slot-note">Weekend Brunch & Special Dinner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo_restaurent.png" alt="The Flame Table Logo" class="footer-logo">
+                    <p class="footer-about">
+                        Wood-fired flavors, seasonal ingredients, and warm hospitality — an unforgettable dining experience in the heart of the city.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://google.com" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i><span>Collins Street West, Victoria 8007, Australia</span></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+12083339296">+1 (208) 333-9296</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:concierge@theflametable.com">concierge@theflametable.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Mon – Thu</span><span>12:00 – 23:00</span></li>
+                        <li><span>Fri – Sat</span><span>12:00 – 01:00</span></li>
+                        <li><span>Sunday</span><span>12:00 – 22:00</span></li>
+                    </ul>
+                    <p class="footer-note"><i class="fa-solid fa-fire-flame-curved"></i> Walk-ins welcome at the fire bar.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 The Flame Table. All Rights Reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <a href="#home" class="footer-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Interactive Scripts -->
+    <script>
+
+        // Navbar Scrolled Effect
+        window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.menu-navbar'); 
+        if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+         } else {
+        navbar.classList.remove('scrolled');
+        }
+        });
+
+        // Preloader Hide
+        const preloader = document.getElementById('page-preloader');
+        function hidePreloader() { if (preloader) preloader.classList.add('loaded'); }
+        window.addEventListener('load', () => setTimeout(hidePreloader, 1000));
+        setTimeout(hidePreloader, 4000);
+
+        // Hero Carousel Slide Synchronizer
+        const heroCarousel = document.querySelector('.hero-carousel');
+        if (heroCarousel) {
+            heroCarousel.addEventListener('slide.bs.carousel', function (e) {
+                const activeIndex = e.to;
+                document.querySelectorAll('.hero-slide').forEach(slide => {
+                    slide.classList.add('d-none');
+                    slide.classList.remove('active');
+                });
+                const targetSlide = document.querySelector(`.hero-slide[data-slide="${activeIndex}"]`);
+                if (targetSlide) {
+                    targetSlide.classList.remove('d-none');
+                    setTimeout(() => targetSlide.classList.add('active'), 50);
+                }
+            });
+        }
+
+        // Close Mobile Menu When A Link Is Tapped
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                const collapse = document.getElementById('ftNav');
+                if (collapse && collapse.classList.contains('show')) {
+                    bootstrap.Collapse.getOrCreateInstance(collapse).hide();
+                }
+            });
+        });
+
+        // Smooth Back to Top Scroll
+        const backTopBtn = document.querySelector('.footer-top');
+        if (backTopBtn) {
+            backTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // ============================================
+// GUEST LEDGER CAROUSEL / SCROLL CONTROLS
+// ============================================
+const ledgerTrack = document.querySelector('.ledger-track');
+const ledgerPrev = document.querySelector('.ledger-prev');
+const ledgerNext = document.querySelector('.ledger-next');
+
+if (ledgerTrack && ledgerPrev && ledgerNext) {
+    const scrollAmount = 360; // Scroll distance per click
+
+    ledgerPrev.addEventListener('click', () => {
+        ledgerTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    ledgerNext.addEventListener('click', () => {
+        ledgerTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    // Optional: Mouse drag to scroll support
+    let isDown = false;
+    let startX, scrollLeft;
+
+    ledgerTrack.addEventListener('mousedown', (e) => {
+        isDown = true;
+        ledgerTrack.classList.add('active');
+        startX = e.pageX - ledgerTrack.offsetLeft;
+        scrollLeft = ledgerTrack.scrollLeft;
+    });
+
+    ledgerTrack.addEventListener('mouseleave', () => {
+        isDown = false;
+        ledgerTrack.classList.remove('active');
+    });
+
+    ledgerTrack.addEventListener('mouseup', () => {
+        isDown = false;
+        ledgerTrack.classList.remove('active');
+    });
+
+    ledgerTrack.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - ledgerTrack.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll-fast multiplier
+        ledgerTrack.scrollLeft = scrollLeft - walk;
+    });
+}
+    </script>
+</body>
+</html>
